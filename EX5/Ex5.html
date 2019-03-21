@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Exercício 5</title>
+  <meta charset="UTF-8" />
+  <script type="text/javascript" src="ex5.js"></script>
+</head>
+
+<body>
+  <div id="formulario">
+    <form method="post" name="dados">
+      <h1>Preencha os dados abaixo:</h1>
+      <p>
+        <label for="usuario">Usuário</label>
+        <input id="usuario" name="usuario" required="required" type="text" placeholder="Usuário" />
+      </p>
+      <p>
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" required="required" type="password" placeholder="6 a 10 caracteres" />
+      </p>
+      <p>
+        <label for="confirmar">Confirme sua senha</label>
+        <input id="confirmar" name="confirmar" required="required" type="password"
+          placeholder="6 a 10 caracteres" />
+      </p>
+      <p>
+        <input type="submit" name="submit" value="Cadastrar" onclick="return enviarDados()" />
+      </p>
+    </form>
+  </div>
+
+</body>
+
+</html>
